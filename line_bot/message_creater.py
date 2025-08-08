@@ -4,7 +4,7 @@ from google.genai import types
 def create_genai_message(message):
     client = genai.Client()
     response = client.models.generate_content(
-        model = "gemini-1.5-flash",
+        model = "gemini-2.5-flash",
         contents = message,
         config=types.GenerateContentConfig(
         thinking_config=types.ThinkingConfig(thinking_budget=0) # Disables thinking
