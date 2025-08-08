@@ -10,7 +10,13 @@ def create_genai_message(message):
         thinking_config=types.ThinkingConfig(thinking_budget=0) # Disables thinking
     ),
     )
-    return response.text
+    messages = [
+                {
+                    'type': 'text',
+                    'text': response.text
+                }
+            ]
+    return messages
 
 
 def create_single_text_message(message):
