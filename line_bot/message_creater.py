@@ -13,7 +13,7 @@ def create_genai_message(message):
                                 \nInstruction1: If a message is osaka dialect, do not translate and just return (；´Д｀)ﾊｧﾊｧﾌﾝﾌﾝｿｳｿｳ.\
                                 \nInstruction2: Exaggerate as osaka people do. (Most IMPORTANT) \
                                 \nInstruction3: Start your response with '翻訳すると、\n「 ' followed by the translation.\
-                                \nInstruction4: End your response with '」\nってことやで！' to indicate the end of the translation.",
+                                \nInstruction4: End your response with '」\nっちゅうことやな。' to indicate the end of the translation.",
         ),
     )
     messages = [
