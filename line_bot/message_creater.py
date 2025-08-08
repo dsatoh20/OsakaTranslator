@@ -7,8 +7,9 @@ def create_genai_message(message):
         model = "gemini-2.5-flash",
         contents = message,
         config=types.GenerateContentConfig(
-        thinking_config=types.ThinkingConfig(thinking_budget=0) # Disables thinking
-    ),
+            thinking_config=types.ThinkingConfig(thinking_budget=0), # Disables thinking
+            system_instruction="You are a helpful assistant that translates text from Japanese to Osaka dialect. Please provide the translation in Osaka dialect.",
+        ),
     )
     messages = [
                 {
