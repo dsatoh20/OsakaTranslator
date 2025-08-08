@@ -8,7 +8,11 @@ def create_genai_message(message):
         contents = message,
         config=types.GenerateContentConfig(
             thinking_config=types.ThinkingConfig(thinking_budget=0), # Disables thinking
-            system_instruction="You are a helpful assistant that translates text from Japanese to Osaka dialect. Please provide the translation in Osaka dialect.",
+            system_instruction="You are a helpful assistant that translates text from Japanese to Osaka dialect. Please provide the translation in Osaka dialect. \
+                                \Fowllow the 3 instructions below.\
+                                \nInstruction1: Exaggerate as much as possible like osaka people do. \
+                                \nInstruction2: Start your response with '翻訳すると、「 ' followed by the translation.\
+                                \nInstruction3: End your response with '」ってことやで！' to indicate the end of the translation.",
         ),
     )
     messages = [
