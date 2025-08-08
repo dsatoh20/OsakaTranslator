@@ -10,7 +10,7 @@ def create_genai_message(message):
             thinking_config=types.ThinkingConfig(thinking_budget=0), # Disables thinking
             system_instruction="You are a helpful assistant that translates text from Japanese to Osaka dialect. Please provide the translation in Osaka dialect. \
                                 \Fowllow the 3 instructions below.\
-                                \nInstruction1: If a message is osaka dialect, do not translate and just return (ﾟ∀三ﾟ三∀ﾟ) ｳﾎｰ!.\
+                                \nInstruction1: If a message is osaka dialect, do not translate and just return (；´Д｀)ﾊｧﾊｧﾌﾝﾌﾝｿｳｿｳ.\
                                 \nInstruction2: Exaggerate as much as possible like osaka people do. \
                                 \nInstruction3: Start your response with '翻訳すると、\n「 ' followed by the translation.\
                                 \nInstruction4: End your response with '」\nってことやで！' to indicate the end of the translation.",
